@@ -4,7 +4,7 @@ import java.util.random.RandomGeneratorFactory;
 public class Prog1 {
     public static void main(String[] args) {
         // Create a RandomGenerator instance
-        RandomGenerator randomGenerator = RandomGeneratorFactory.of("L32X64MixRandom").create();
+        RandomGenerator randomGenerator = RandomGenerator.getDefault();
         int randomNum = randomGenerator.nextInt(1, 9);
         double pi = Math.PI;
 
